@@ -1,3 +1,8 @@
+/* Adicione isto no seu arquivo global de estilos, geralmente em styles.css ou similar */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
 * {
   margin: 0;
   padding: 0;

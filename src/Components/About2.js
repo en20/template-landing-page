@@ -5,84 +5,85 @@ const About2 = () => {
   return (
     <div className="main-container">
       <h1 className="centralizado primary-heading-about">
-        OS RECURSOS CERTOS PARA ALAVANCAR O SEU NEGÓCIO
+        THE RIGHT RESOURCES TO BOOST YOUR BUSINESS!
       </h1>
       <p className="centralizado primary-text-about">
-        Alinhamos a criação de um Site com estratégias de Marketing Digital para
-        sua empresa ficar online e ter melhores resultados.
+        We align website creation with digital marketing strategies to help your
+        business go online and achieve better results.
       </p>
       <div className="grid-container">
         <div className="grid-item">
           <SlSocialInstagram className="icon" />
-          <p>REDES SOCIAIS</p>
+          <p>SOCIAL MEDIA</p>
           <p>
-            O conteúdo de seu site compartilhado e podendo ser visto por milhões
-            de pessoas.
+            The content of your website shared and visible to millions of
+            people.
           </p>
         </div>
         <div className="grid-item">
           <SlSocialInstagram className="icon" />
-          <p>SUCESSO DO CLIENTE</p>
+          <p>CUSTOMER SUCCESS</p>
           <p>
-            Você será atendido por profissionais experientes que lhe darão dicas
-            de estratégias para alcançar o seu sucesso online.
+            You will be attended by experienced professionals who will provide
+            you with strategy tips to achieve your online success.
           </p>
         </div>
         <div className="grid-item">
           <SlSocialInstagram className="icon" />
-          <p>RECEBIMENTOS PELO SITE</p>
+          <p>RECEIVING PAYMENTS THROUGH THE WEBSITE</p>
           <p>
-            Você poderá receber pagamentos em seu site via cartão e boleto com
-            os botões (Pagseguro, Paypal e Mercado Pago).
+            You can receive payments on your website via card and boleto with
+            buttons (Pagseguro, PayPal, and Mercado Pago).
           </p>
         </div>
         <div className="grid-item">
           <SlSocialInstagram className="icon" />
-          <p>WHATSAPP E CHAT</p>
+          <p>WHATSAPP AND CHAT</p>
           <p>
-            Você oferecerá atendimento de excelência para seus clientes e
-            economizará o tempo de sua equipe.
+            You will provide excellent customer service and save your team's
+            time.
           </p>
         </div>
         <div className="grid-item">
           <SlSocialInstagram className="icon" />
-          <p>E-MAIL PROFISSIONAL</p>
+          <p>PROFESSIONAL E-MAIL</p>
           <p>
-            Profissionalismo nas suas comunicações, enviando e recebendo
-            mensagens por um e-mail com sua marca. Exemplo: contato@suamarca.com.br
+            Professionalism in your communications, sending and receiving
+            messages through an email with your brand. Example:
+            contact@yourbrand.com.br
           </p>
         </div>
         <div className="grid-item">
           <SlSocialInstagram className="icon" />
-          <p>ENCONTRADO NO GOOGLE</p>
+          <p>BE FOUND ON GOOGLE</p>
           <p>
-            Através de SEO, você alcançará mais clientes com uma boa
-            classificação nos resultados das buscas do Google e Bing.
+            Through SEO, you will reach more customers with a good ranking in
+            Google and Bing search results.
           </p>
         </div>
         <div className="grid-item">
           <SlSocialInstagram className="icon" />
-          <p>ATUALIZAÇÃO SIMPLES</p>
+          <p>SIMPLE UPDATE</p>
           <p className="text-grid">
-            Com o treinamento exclusivo que iremos dar em nosso sistema simples
-            de usar, você mesmo poderá atualizar seu site sem necessitar de
-            conhecimento técnico.
+            With the exclusive training we will provide on our easy-to-use
+            system, you will be able to update your website yourself without
+            needing technical knowledge.
           </p>
         </div>
         <div className="grid-item">
           <SlSocialInstagram className="icon" />
-          <p>DOMÍNIO PERSONALIZADO</p>
+          <p>CUSTOM DOMAIN</p>
           <p>
-            Você transmitirá mais credibilidade aos seus clientes com um domínio
-            personalizado. Exemplo: www.suamarca.com.br
+            You will convey more credibility to your customers with a custom
+            domain. Example: www.yourbrand.com
           </p>
         </div>
         <div className="grid-item">
           <SlSocialInstagram className="icon" />
-          <p>SITE RESPONSIVO</p>
+          <p>RESPONSIVE WEBSITE</p>
           <p>
-            Um site adaptável para computador, tablet e celular melhora a
-            experiência do usuário, aumentando as interações.
+            A website adaptable for desktop, tablet, and mobile improves the
+            user experience, increasing interactions.
           </p>
         </div>
       </div>

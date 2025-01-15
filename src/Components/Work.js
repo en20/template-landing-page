@@ -7,34 +7,33 @@ const Work = () => {
   const workInfoData = [
     {
       image: PickMeals,
-      title: "Proposta e Planejamento",
-      text: "Após o entendimento completo das suas necessidades, enviaremos uma proposta detalhada com valores, cronograma e escopo do serviço, Assim que aprovada, iniciamos o trabalho no seu projeto.",
+      title: "Proposal and Planning",
+      text: "After fully understanding your needs, we will send a detailed proposal with values, schedule, and scope of the service. Once approved, we will begin working on your project.",
     },
     {
       image: ChooseMeals,
-      title: "Execução e Entrega",
-      text: "Mantemos você atualizado durante todo o processo. Você terá a oportunidade de revisar e sugerir ajustes antes da entrega final. No caso de tráfego pago, relatórios regulares serão fornecidos para que você acompanhe os resultados.",
+      title: "Execution and Delivery",
+      text: "We keep you updated throughout the process. You will have the opportunity to review and suggest adjustments before the final delivery. In the case of paid traffic, regular reports will be provided so you can track the results.",
     },
     {
       image: DeliveryMeals,
-      title: "Suporte Pós-Entrega",
-      text: "Após a conclusão do projeto, continuamos disponíveis para dúvidas ou ajustes adicionais, garantindo sua total satisfação.",
+      title: "Post-Delivery Support",
+      text: "After the project is completed, we remain available for any questions or additional adjustments, ensuring your complete satisfaction.",
     },
   ];
   return (
     <div className="work-section-wrapper">
       <div className="work-section-top">
-        <p className="primary-subheading">Nosso Trabalho</p>
-        <h1 className="primary-heading">Como funciona</h1>
+        <p className="primary-subheading">Our Work</p>
+        <h1 className="primary-heading">How it works?</h1>
         <p className="primary-text">
-          Preencha o formulário com suas informações e uma breve descrição do
-          serviço desejado; ao clicar em "Enviar", você será redirecionado
-          automaticamente para o WhatsApp com uma mensagem pré-formatada. A
-          partir disso, conversamos diretamente com você para entender suas
-          necessidades, enviar uma proposta personalizada e, após aprovação,
-          iniciamos o projeto. Durante o processo, mantemos você atualizado,
-          entregamos resultados conforme combinado e oferecemos suporte
-          pós-entrega para garantir sua satisfação.
+          Fill out the form with your information and a brief description of the
+          desired service; by clicking "Send," you will be automatically
+          redirected to WhatsApp with a pre-formatted message. From there, we
+          will communicate directly with you to understand your needs, send a
+          personalized proposal, and, after approval, start the project.
+          Throughout the process, we keep you updated, deliver results as
+          agreed, and offer post-delivery support to ensure your satisfaction.
         </p>
       </div>
       <div className="work-section-bottom">

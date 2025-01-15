@@ -21,7 +21,7 @@ const Home = () => {
     e.preventDefault();
     const { name, email, message } = formData;
     const whatsappMessage = `Olá, meu nome é ${name}. Meu email é ${email}. Gostaria de criar um site com vocês. Minha mensagem: ${message}`;
-    const whatsappURL = `https://wa.me/+5585999020518?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/+558591124238?text=${encodeURIComponent(
       whatsappMessage
     )}`;
     window.open(whatsappURL, "_blank");
@@ -40,17 +40,17 @@ const Home = () => {
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
-            Transforme sua ideia em um site incrível. Criamos para você um site
-            bonito e que gera resultados, com um excelente custo-benefício.
+            Turn your idea into an amazing website. We create a beautiful and
+            results-driven site for you, at an affordable price.
           </h1>
           <p className="primary-text">
-            Oferecemos soluções personalizadas para criar sites modernos,
-            funcionais e que realmente convertem. Seja para impulsionar seu
-            negócio ou trazer sua ideia à vida, estamos prontos para entregar
-            resultados que fazem a diferença.
+            We offer customized solutions to create modern, functional websites
+            that truly convert. Whether to boost your business or bring your
+            idea to life, we are ready to deliver results that make a
+            difference.
           </p>
           <button className="secondary-button" onClick={scrollToForm}>
-            Solicitar Orçamento
+            Request a Budget
             <FiArrowRight />{" "}
           </button>
         </div>
@@ -60,14 +60,14 @@ const Home = () => {
             onSubmit={handleSubmit}
             ref={formRef} // A referência é associada aqui
           >
-            <h2>RECEBA UM ORÇAMENTO AGORA.</h2>
+            <h2>GET A BUDGET NOW</h2>
             <p>
-              Preencha os campos abaixo, nossos especialistas irão preparar e
-              lhe enviar GRATUITAMENTE um ORÇAMENTO personalizado para seu ramo
-              de atuação e sua necessidade.
+              Fill in the fields below, and our specialists will prepare and
+              send you a FREE personalized budget tailored to your industry and
+              needs.
             </p>
             <div className="form-group">
-              <label htmlFor="name">Nome</label>
+              <label htmlFor="name">Name</label>
               <input
                 type="text"
                 id="name"
@@ -89,7 +89,7 @@ const Home = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="message">Mensagem</label>
+              <label htmlFor="message">Message</label>
               <textarea
                 id="message"
                 name="message"
@@ -99,7 +99,7 @@ const Home = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit">Enviar para WhatsApp</button>
+            <button type="submit">Send to WhatsApp</button>
           </form>
         </div>
       </div>

@@ -12,26 +12,25 @@ const About = () => {
         <img src={AboutBackgroundImage} alt="" />
       </div>
       <div className="about-section-text-container">
-        <p className="primary-subheading">O que fazemos?</p>
+        <p className="primary-subheading">What do we do?</p>
         <h1 className="primary-heading">
-          Nunca foi tão fácil ter um site de sucesso.
+          It has never been easier to have a successful website.
         </h1>
         <p className="primary-text">
-          Criamos sites responsivos, rápidos e visualmente atraentes, adaptados
-          às necessidades do seu negócio. Também desenvolvemos sistemas
-          personalizados para automação, gerenciamento ou qualquer necessidade
-          específica da sua empresa. Te ajudamos a ter um site profissional,
-          feito sob medida e ideal para divulgar pequenas e médias empresas na
-          internet.
+          We create responsive, fast, and visually appealing websites tailored
+          to your business needs. We also develop custom systems for automation,
+          management, or any specific requirements of your company. We help you
+          have a professional website, custom-made and ideal for promoting small
+          and medium-sized businesses online.
         </p>
         <p className="primary-text">
-          Você sabia que para ter um site de sucesso você precisa ter: registro
-          de domínio, hospedagem segura e rápida, técnicas eficientes de SEO,
-          certificado de segurança SSL, uma página leve, rápida, bonita, moderna
-          e responsiva, e-mails confiáveis, sistema CMS simples de usar, imagens
-          profissionais, textos persuasivos, além de conhecimento em estratégias
-          de marketing digital? Fique tranquilo, cuidamos disso tudo, você só
-          curte o resultado!
+          Did you know that to have a successful website, you need: domain
+          registration, secure and fast hosting, efficient SEO techniques, an
+          SSL security certificate, a lightweight, fast, beautiful, modern, and
+          responsive page, reliable emails, an easy-to-use CMS system,
+          professional images, persuasive texts, and knowledge of digital
+          marketing strategies? Don’t worry, we take care of all of that—just
+          enjoy the results!
         </p>
         <p className="primary-text"></p>
         <div className="about-buttons-container"></div>
