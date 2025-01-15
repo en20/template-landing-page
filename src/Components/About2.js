@@ -1,5 +1,18 @@
 import React from "react";
 import { SlSocialInstagram } from "react-icons/sl";
+import { CiFaceSmile } from "react-icons/ci";
+import { GiMoneyStack } from "react-icons/gi";
+import { FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FcGoogle } from "react-icons/fc";
+import { MdBrowserUpdated } from "react-icons/md";
+import { TbWorldWww } from "react-icons/tb";
+import { IoPhonePortraitOutline } from "react-icons/io5";
+
+
+
+
+
 
 const About2 = () => {
   return (
@@ -21,7 +34,7 @@ const About2 = () => {
           </p>
         </div>
         <div className="grid-item">
-          <SlSocialInstagram className="icon" />
+          <CiFaceSmile className="icon" />
           <p>CUSTOMER SUCCESS</p>
           <p>
             You will be attended by experienced professionals who will provide
@@ -29,7 +42,7 @@ const About2 = () => {
           </p>
         </div>
         <div className="grid-item">
-          <SlSocialInstagram className="icon" />
+          <GiMoneyStack className="icon" />
           <p>RECEIVING PAYMENTS THROUGH THE WEBSITE</p>
           <p>
             You can receive payments on your website via card and boleto with
@@ -37,7 +50,7 @@ const About2 = () => {
           </p>
         </div>
         <div className="grid-item">
-          <SlSocialInstagram className="icon" />
+          <FaWhatsapp className="icon" />
           <p>WHATSAPP AND CHAT</p>
           <p>
             You will provide excellent customer service and save your team's
@@ -45,7 +58,7 @@ const About2 = () => {
           </p>
         </div>
         <div className="grid-item">
-          <SlSocialInstagram className="icon" />
+          <MdEmail className="icon" />
           <p>PROFESSIONAL E-MAIL</p>
           <p>
             Professionalism in your communications, sending and receiving
@@ -54,7 +67,7 @@ const About2 = () => {
           </p>
         </div>
         <div className="grid-item">
-          <SlSocialInstagram className="icon" />
+          <FcGoogle className="icon" />
           <p>BE FOUND ON GOOGLE</p>
           <p>
             Through SEO, you will reach more customers with a good ranking in
@@ -62,7 +75,7 @@ const About2 = () => {
           </p>
         </div>
         <div className="grid-item">
-          <SlSocialInstagram className="icon" />
+          <MdBrowserUpdated className="icon" />
           <p>SIMPLE UPDATE</p>
           <p className="text-grid">
             With the exclusive training we will provide on our easy-to-use
@@ -71,7 +84,7 @@ const About2 = () => {
           </p>
         </div>
         <div className="grid-item">
-          <SlSocialInstagram className="icon" />
+          <TbWorldWww  className="icon" />
           <p>CUSTOM DOMAIN</p>
           <p>
             You will convey more credibility to your customers with a custom
@@ -79,7 +92,7 @@ const About2 = () => {
           </p>
         </div>
         <div className="grid-item">
-          <SlSocialInstagram className="icon" />
+          <IoPhonePortraitOutline className="icon" />
           <p>RESPONSIVE WEBSITE</p>
           <p>
             A website adaptable for desktop, tablet, and mobile improves the
