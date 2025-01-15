@@ -8,12 +8,6 @@ import { FcGoogle } from "react-icons/fc";
 import { MdBrowserUpdated } from "react-icons/md";
 import { TbWorldWww } from "react-icons/tb";
 import { IoPhonePortraitOutline } from "react-icons/io5";
-
-
-
-
-
-
 const About2 = () => {
   return (
     <div className="main-container">
