@@ -17,14 +17,26 @@ const Home = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleWhatsappSubmit = (e) => {
     e.preventDefault();
     const { name, email, message } = formData;
-    const whatsappMessage = `Olá, meu nome é ${name}. Meu email é ${email}. Gostaria de contratar seus serviços digitais (sites, sistemas, landing pages, sites institucionais, marketing digital, Instagram, tráfego pago, design). Minha mensagem: ${message}`;
+    const whatsappMessage = `Hello, my name is ${name}. My email is ${email}. I am interested in hiring your digital services (websites, systems, landing pages, institutional websites, digital marketing strategies including Instagram management, paid traffic, design). My message: ${message}`;
     const whatsappURL = `https://wa.me/+558591124238?text=${encodeURIComponent(
       whatsappMessage
     )}`;
     window.open(whatsappURL, "_blank");
+  };
+
+  const handleEmailSubmit = (e) => {
+    e.preventDefault();
+    const { name, email, message } = formData;
+    const subject = encodeURIComponent("Inquiry about Digital Services");
+    const body = encodeURIComponent(
+      `Hello,\n\nMy name is ${name}.\nMy email is ${email}.\nI am interested in your digital services. My message is:\n${message}\n\nThank you.`
+    );
+    const companyEmail = "soltechsolutionscs@gmail.com"; // Substitua pelo seu e-mail real
+    const mailtoURL = `mailto:${companyEmail}?subject=${subject}&body=${body}`;
+    window.open(mailtoURL, "_blank");
   };
 
   const scrollToForm = () => {
@@ -59,7 +71,6 @@ const Home = () => {
         <div className="home-image-section">
           <form
             className="contact-form"
-            onSubmit={handleSubmit}
             ref={formRef} // A referência é associada aqui
           >
             <p>Ready to Elevate Your Digital Presence?</p>
@@ -102,7 +113,14 @@ const Home = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit">Get a Free Quote on WhatsApp</button>
+            <div className="form-group-buttons">
+              <button type="button" onClick={handleWhatsappSubmit}>
+                Get a Free Quote on WhatsApp
+              </button>
+              <button type="button" onClick={handleEmailSubmit}>
+                Send Email
+              </button>
+            </div>
           </form>
         </div>
       </div>

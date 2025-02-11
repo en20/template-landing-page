@@ -594,3 +594,9 @@ nav {
   color: #6a6a6a;
   margin: 1.5rem 0rem;
 }
+
+/* Adicionando espaçamento entre os botões de WhatsApp e Email */
+.contact-form .form-group-buttons {
+  display: flex;
+  gap: 1rem;
+}
