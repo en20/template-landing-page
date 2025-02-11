@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="nav-logo-container">
-        <h1>PAGEFY IT</h1>
+        <h1>SOLTECH</h1>
       </div>
       <div className="navbar-links-container">
       </div>

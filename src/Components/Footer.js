@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="footer-wrapper">
       <div className="footer-section-one">
         <div className="footer-logo-container">
-          <h1>PAGEFY</h1>
+          <h1>SOLTECH</h1>
         </div>
         <div className="footer-icons">
           <BsTwitter />
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         <div className="footer-section-columns">
           <span>+5585999020518</span>
-          <span>pagefyit@gmail.com</span>
+          <span>soltech@gmail.com</span>
         </div>
         <div className="footer-section-columns">
           <span>Terms & Conditions</span>

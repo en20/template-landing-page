@@ -13,13 +13,13 @@ const Testimonial = () => {
       <div className="testimonial-section-bottom">
         <img src={ProfilePic} alt="" />
         <p>
-          Working with the Pagefy team was an amazing experience. From the
+          Working with the soltech team was an amazing experience. From the
           start, I was impressed by their attention to detail and dedication to
           turning our vision into reality. The website turned out flawless, not
           only in terms of design but also in functionality and performance. The
           team was extremely professional and attentive throughout the process,
           always ready to listen to our needs and offer creative solutions. I
-          highly recommend Pagefy to anyone looking for excellence and
+          highly recommend soltech to anyone looking for excellence and
           innovation. We are very satisfied with the final result!
         </p>
         <div className="testimonials-stars-container">
