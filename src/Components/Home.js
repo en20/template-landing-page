@@ -20,7 +20,7 @@ const Home = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, email, message } = formData;
-    const whatsappMessage = `Olá, meu nome é ${name}. Meu email é ${email}. Gostaria de criar um site com vocês. Minha mensagem: ${message}`;
+    const whatsappMessage = `Olá, meu nome é ${name}. Meu email é ${email}. Gostaria de contratar seus serviços digitais (sites, sistemas, landing pages, sites institucionais, marketing digital, Instagram, tráfego pago, design). Minha mensagem: ${message}`;
     const whatsappURL = `https://wa.me/+558591124238?text=${encodeURIComponent(
       whatsappMessage
     )}`;
@@ -40,18 +40,20 @@ const Home = () => {
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
-            Turn your idea into an amazing website. We create a beautiful and
-            results-driven site for you, at an affordable price.
+            Turn your idea into an amazing digital solution. We can create everything you need. 
           </h1>
           <p className="primary-text">
-            We offer customized solutions to create modern, functional websites
-            that truly convert. Whether to boost your business or bring your
-            idea to life, we are ready to deliver results that make a
-            difference.
+            We design and develop websites, systems, landing pages, institutional sites,
+            digital marketing strategies (including Instagram management and
+            paid traffic), and creative designs to elevate your brand.
+            We provide customized digital services to create modern, responsive,
+            and conversion-driven online experiences. Whether it's a website,
+            system, landing page or a comprehensive digital marketing strategy,
+            we are here to bring your vision to life.
           </p>
           <button className="secondary-button" onClick={scrollToForm}>
-            Request a Budget
-            <FiArrowRight />{" "}
+            Request a Quote
+            <FiArrowRight />
           </button>
         </div>
         <div className="home-image-section">
@@ -60,10 +62,11 @@ const Home = () => {
             onSubmit={handleSubmit}
             ref={formRef} // A referência é associada aqui
           >
-            <h2>GET A BUDGET NOW</h2>
+            <p>Ready to Elevate Your Digital Presence?</p>
+            <h2 className="">Get a Custom Landing Page in Just 5 Days!</h2>
             <p>
-              Fill in the fields below, and our specialists will prepare and
-              send you a FREE personalized budget tailored to your industry and
+              Fill in the fields below and our specialists will prepare and send
+              you a FREE personalized digital services quote tailored to your
               needs.
             </p>
             <div className="form-group">
@@ -99,7 +102,7 @@ const Home = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit">Send to WhatsApp</button>
+            <button type="submit">Get a Free Quote on WhatsApp</button>
           </form>
         </div>
       </div>

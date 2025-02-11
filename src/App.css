@@ -27,7 +27,7 @@ img {
   font-weight: bold;
   text-align: center;
   margin-bottom: 16px;
-  color: #333;
+  color: #f29d2e;
 }
 .contact-form p {
   font-size: 20px;
@@ -152,6 +152,14 @@ nav {
   max-width: 700px;
 }
 
+.texto-formulario {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #f29d2e;
+}
+
 
 .home-image-section {
   max-width: 600px;
@@ -173,7 +181,7 @@ nav {
   max-width: 600px;
 }
 .primary-text {
-  font-size: 20px;
+  font-size: 16px;
   max-width: 500px;
   color: #6a6a6a;
   margin: 1.5rem 0rem;
