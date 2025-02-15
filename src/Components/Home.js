@@ -61,6 +61,7 @@ const Home = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     message: "",
   });
   const [showPopup, setShowPopup] = useState(false);
@@ -80,7 +81,7 @@ const Home = () => {
   async function sendContact(ev) {
     ev.preventDefault();
 
-    const { name, email, message } = formData;
+    const { name, email, phone, message } = formData;
 
     const webhookBody = {
       embeds: [
@@ -89,6 +90,7 @@ const Home = () => {
           fields: [
             { name: "Name", value: name || "Not provided", inline: true },
             { name: "Email", value: email || "Not provided", inline: true },
+            { name: "Phone", value: phone || "Not provided", inline: true },
             { name: "Message", value: message || "Not provided" },
           ],
           timestamp: new Date().toISOString(),
@@ -109,7 +111,7 @@ const Home = () => {
       });
       if (response.ok) {
         setShowPopup(true);
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({ name: "", email: "", phone: "", message: "" });
       } else {
         console.error("There was an error sending the message.");
       }
@@ -173,6 +175,17 @@ const Home = () => {
               />
             </div>
             <div className="form-group">
+              <label htmlFor="phone">Phone</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="form-group">
               <label htmlFor="message">Message</label>
               <textarea
                 id="message"
@@ -189,9 +202,7 @@ const Home = () => {
           </form>
         </div>
       </div>
-      {showPopup && (
-        <PopupModal onClose={() => setShowPopup(false)} />
-      )}
+      {showPopup && <PopupModal onClose={() => setShowPopup(false)} />}
     </div>
   );
 };
