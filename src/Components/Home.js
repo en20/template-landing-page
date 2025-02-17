@@ -121,7 +121,7 @@ const Home = () => {
   }
 
   return (
-    <div className="home-container">
+    <div id="home" className="home-container">
       <Navbar />
       <div className="home-banner-container">
         <div className="home-bannerImage-container">
