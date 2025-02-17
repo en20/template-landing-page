@@ -17,6 +17,40 @@ const LanguageSelector = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Detecta o idioma do navegador na primeira renderização
+  useEffect(() => {
+    const detectUserLanguage = async () => {
+      try {
+        // Tenta pegar o idioma salvo no localStorage primeiro
+        const savedLanguage = localStorage.getItem('userLanguage');
+        if (savedLanguage) {
+          i18n.changeLanguage(savedLanguage);
+          return;
+        }
+
+        // Se não tiver idioma salvo, tenta pegar a localização
+        const response = await fetch('https://ipapi.co/json/');
+        const data = await response.json();
+        
+        // Define o idioma baseado no país
+        const userLanguage = data.country_code === 'BR' ? 'pt' : 'en';
+        
+        i18n.changeLanguage(userLanguage);
+        localStorage.setItem('userLanguage', userLanguage);
+      } catch (error) {
+        // Em caso de erro, usa 'en' como fallback
+        console.warn('Could not detect user location, defaulting to EN', error);
+        i18n.changeLanguage('en');
+        localStorage.setItem('userLanguage', 'en');
+      }
+    };
+
+    // Só detecta se não houver idioma salvo
+    if (!localStorage.getItem('userLanguage')) {
+      detectUserLanguage();
+    }
+  }, [i18n]);
+
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     localStorage.setItem('userLanguage', lng);
