@@ -12,7 +12,6 @@ import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import MenuIcon from '@mui/icons-material/Menu';
 import './Navbar.css';
 import { useTranslation } from 'react-i18next';
