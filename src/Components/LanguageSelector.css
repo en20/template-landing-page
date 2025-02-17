@@ -1,0 +1,269 @@
+.language-selector {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  z-index: 1000;
+}
+
+.flag-container {
+  display: flex;
+  gap: 15px;
+ 
+  padding: 8px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+
+}
+
+.flag-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.flag-button:hover {
+  transform: scale(1.1);
+}
+
+.flag-button.active {
+  transform: scale(1.1);
+}
+
+.flag-button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+ 
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.flag {
+  position: relative;
+}
+
+.flag-img {
+  width: 60px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  object-fit: cover;
+  
+}
+
+.flag:hover .flag-img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.flag-button:hover .tooltip {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+}
+
+/* Mobile Styles */
+.mobile-language-selector {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  z-index: 1000;
+}
+
+.mobile-selected-flag {
+  position: relative;
+  display: inline-block;
+  z-index: 1001;
+}
+
+.mobile-select {
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg fill='white' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-position: right 2px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: #333;
+  cursor: pointer;
+  padding: 4px 24px 4px 8px;
+  position: relative;
+  z-index: 1002;
+  font-size: 14px;
+  min-width: 120px;
+}
+
+.mobile-select option {
+  background: white;
+  color: #333;
+  padding: 12px;
+  font-size: 14px;
+}
+
+/* Animação de pulso */
+@keyframes pulse {
+  0% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-50%) scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .language-selector {
+    margin: 0;
+    position: relative;
+  }
+
+  .select-container {
+    position: relative;
+    width: 45px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+  }
+
+  .current-flag {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    pointer-events: none;
+    z-index: 1;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .arrow {
+    font-size: 8px;
+    color: white;
+    margin-left: 2px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+
+  .select-container:hover .arrow {
+    opacity: 1;
+  }
+
+  .flag-icon {
+    width: 25px;
+    height: 17px;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  }
+
+  .language-select {
+    appearance: none;
+    width: 100%;
+    padding: 8px 15px 8px 5px;
+    cursor: pointer;
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    height: 35px;
+  }
+
+  .language-select option {
+    background: #1a1a1a;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Remove estilos antigos não utilizados */
+  .mobile-selected-flag,
+  .mobile-language-selector,
+  .mobile-select,
+  .language-selector-mobile {
+    display: none;
+  }
+}
+
+/* Efeito de hover nas bandeiras */
+.flag-button::before {
+  content: '';
+  position: absolute;
+  border-radius: 6px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.flag-button:hover::before,
+.flag-button.active::before {
+  opacity: 1;
+}
+
+/* Efeito de clique */
+.flag-button:active {
+  transform: scale(0.95);
+}
+
+.flag-button.active .flag-img {
+  border: 3px solid white;
+  
+}
+
+.flag-icon {
+  width: 24px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.language-btn {
+  background: none;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.language-btn.active {
+  opacity: 1;
+}
+
+.language-btn:hover {
+  opacity: 1;
+} 

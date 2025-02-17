@@ -1,0 +1,119 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "work": "Work",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "home": {
+    "mainHeading": "Turn your idea into an amazing digital solution. We can create everything you need.",
+    "description": "We design and develop websites, systems, landing pages, institutional sites, digital marketing strategies (including Instagram management and paid traffic), and creative designs to elevate your brand. We provide customized digital services to create modern, responsive, and conversion-driven online experiences. Whether it's a website, system, landing page, or a comprehensive digital marketing strategy, we are here to bring your vision to life.",
+    "requestQuote": "Request a Quote",
+    "form": {
+      "title": "Ready to Elevate Your Digital Presence?",
+      "subtitle": "Get a Custom Landing Page in Just 5 Days!",
+      "description": "Fill in the fields below and our specialists will prepare and send you a FREE personalized digital services quote tailored to your needs.",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "send": "Send"
+    },
+    "successPopup": {
+      "title": "Congratulations!",
+      "message": "You are one step closer to having the perfect digital solution for your company! Our team of specialists is already preparing a personalized proposal just for you. We'll be in touch within 24 hours to elevate your digital presence to new heights.",
+      "close": "Close"
+    }
+  },
+  "about": {
+    "subheading": "What do we do?",
+    "heading": "It has never been easier to have a successful website.",
+    "description1": "We create responsive, fast, and visually appealing websites tailored to your business needs. We also develop custom systems for automation, management, or any specific requirements of your company. We help you have a professional website, custom-made and ideal for promoting small and medium-sized businesses online.",
+    "description2": "Did you know that to have a successful website, you need: domain registration, secure and fast hosting, efficient SEO techniques, an SSL security certificate, a lightweight, fast, beautiful, modern, and responsive page, reliable emails, an easy-to-use CMS system, professional images, persuasive texts, and knowledge of digital marketing strategies? Don't worry, we take care of all of that—just enjoy the results!"
+  },
+  "services": {
+    "title": "COMPREHENSIVE DIGITAL SOLUTIONS",
+    "subtitle": "Empower your business with vibrant and innovative digital services:",
+    "items": {
+      "websites": {
+        "title": "WEBSITES",
+        "description": "Modern, responsive websites tailored to your business goals."
+      },
+      "systems": {
+        "title": "CUSTOM SYSTEMS",
+        "description": "Custom system solutions designed to streamline operations and drive efficiency."
+      },
+      "landingPages": {
+        "title": "LANDING PAGES",
+        "description": "High-converting landing pages built to capture and convert leads."
+      },
+      "institutional": {
+        "title": "INSTITUTIONAL SITES",
+        "description": "Professional sites that strengthen your brand identity and credibility."
+      },
+      "marketing": {
+        "title": "DIGITAL MARKETING",
+        "description": "Innovative digital marketing strategies to boost your online presence."
+      },
+      "instagram": {
+        "title": "INSTAGRAM MANAGEMENT",
+        "description": "Engage and grow your audience with tailored Instagram strategies."
+      },
+      "traffic": {
+        "title": "PAID TRAFFIC",
+        "description": "Effective paid campaigns designed to maximize your ROI."
+      },
+      "design": {
+        "title": "DESIGN",
+        "description": "Creative design solutions that bring your brand's vision to life."
+      },
+      "ecommerce": {
+        "title": "E-COMMERCE",
+        "description": "Robust e-commerce solutions that drive online sales and customer engagement."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Testimonial",
+    "subtitle": "What They Are Saying",
+    "description": "Look at what our clients are saying:",
+    "testimonial": {
+      "text": "Working with the soltech team was an amazing experience. From the start, I was impressed by their attention to detail and dedication to turning our vision into reality. The website turned out flawless, not only in terms of design but also in functionality and performance. The team was extremely professional and attentive throughout the process, always ready to listen to our needs and offer creative solutions. I highly recommend soltech to anyone looking for excellence and innovation. We are very satisfied with the final result!",
+      "author": "John Doe"
+    }
+  },
+  "footer": {
+    "links": {
+      "quality": "Quality",
+      "help": "Help",
+      "share": "Share",
+      "careers": "Careers",
+      "testimonials": "Testimonials",
+      "work": "Work"
+    },
+    "legal": {
+      "terms": "Terms & Conditions",
+      "privacy": "Privacy Policy"
+    }
+  },
+  "work": {
+    "title": "Our Work",
+    "heading": "How it works?",
+    "description": "Fill out the form with your information and a brief description of the desired service; by clicking \"Send,\" you will be automatically redirected to WhatsApp with a pre-formatted message. From there, we will communicate directly with you to understand your needs, send a personalized proposal, and, after approval, start the project. Throughout the process, we keep you updated, deliver results as agreed, and offer post-delivery support to ensure your satisfaction.",
+    "steps": {
+      "step1": {
+        "title": "Proposal and Planning",
+        "text": "After fully understanding your needs, we will send a detailed proposal with values, schedule, and scope of the service. Once approved, we will begin working on your project."
+      },
+      "step2": {
+        "title": "Execution and Delivery",
+        "text": "We keep you updated throughout the process. You will have the opportunity to review and suggest adjustments before the final delivery. In the case of paid traffic, regular reports will be provided so you can track the results."
+      },
+      "step3": {
+        "title": "Post-Delivery Support",
+        "text": "After the project is completed, we remain available for any questions or additional adjustments, ensuring your complete satisfaction."
+      }
+    }
+  }
+}

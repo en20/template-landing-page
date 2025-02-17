@@ -1,0 +1,119 @@
+{
+  "navbar": {
+    "home": "Início",
+    "about": "Sobre",
+    "work": "Trabalhos",
+    "testimonials": "Depoimentos",
+    "contact": "Contato"
+  },
+  "home": {
+    "mainHeading": "Transforme sua ideia em uma incrível solução digital. Podemos criar tudo que você precisa.",
+    "description": "Projetamos e desenvolvemos websites, sistemas, landing pages, sites institucionais, estratégias de marketing digital (incluindo gestão de Instagram e tráfego pago) e designs criativos para elevar sua marca. Fornecemos serviços digitais personalizados para criar experiências online modernas, responsivas e focadas em conversão. Seja um website, sistema, landing page ou uma estratégia abrangente de marketing digital, estamos aqui para dar vida à sua visão.",
+    "requestQuote": "Solicitar Orçamento",
+    "form": {
+      "title": "Pronto para Elevar sua Presença Digital?",
+      "subtitle": "Tenha uma Landing Page Personalizada em Apenas 5 Dias!",
+      "description": "Preencha os campos abaixo e nossos especialistas irão preparar e enviar um orçamento GRATUITO de serviços digitais personalizado para suas necessidades.",
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Telefone",
+      "message": "Mensagem",
+      "send": "Enviar"
+    },
+    "successPopup": {
+      "title": "Parabéns!",
+      "message": "Você está a um passo de ter a solução digital perfeita para sua empresa! Nossa equipe de especialistas já está preparando uma proposta personalizada para você. Entraremos em contato em até 24 horas para elevar sua presença digital a novos patamares.",
+      "close": "Fechar"
+    }
+  },
+  "about": {
+    "subheading": "O que fazemos?",
+    "heading": "Nunca foi tão fácil ter um website de sucesso.",
+    "description1": "Criamos websites responsivos, rápidos e visualmente atraentes, adaptados às necessidades do seu negócio. Também desenvolvemos sistemas personalizados para automação, gestão ou qualquer requisito específico da sua empresa. Ajudamos você a ter um website profissional, feito sob medida e ideal para promover pequenas e médias empresas online.",
+    "description2": "Você sabia que para ter um website de sucesso, você precisa de: registro de domínio, hospedagem segura e rápida, técnicas eficientes de SEO, certificado de segurança SSL, uma página leve, rápida, bonita, moderna e responsiva, emails confiáveis, um sistema CMS fácil de usar, imagens profissionais, textos persuasivos e conhecimento de estratégias de marketing digital? Não se preocupe, cuidamos de tudo isso—apenas aproveite os resultados!"
+  },
+  "services": {
+    "title": "SOLUÇÕES DIGITAIS ABRANGENTES",
+    "subtitle": "Potencialize seu negócio com serviços digitais vibrantes e inovadores:",
+    "items": {
+      "websites": {
+        "title": "WEBSITES",
+        "description": "Websites modernos e responsivos adaptados aos objetivos do seu negócio."
+      },
+      "systems": {
+        "title": "SISTEMAS PERSONALIZADOS",
+        "description": "Soluções de sistemas personalizados projetados para otimizar operações e aumentar a eficiência."
+      },
+      "landingPages": {
+        "title": "LANDING PAGES",
+        "description": "Landing pages de alta conversão construídas para captar e converter leads."
+      },
+      "institutional": {
+        "title": "SITES INSTITUCIONAIS",
+        "description": "Sites profissionais que fortalecem a identidade e credibilidade da sua marca."
+      },
+      "marketing": {
+        "title": "MARKETING DIGITAL",
+        "description": "Estratégias inovadoras de marketing digital para impulsionar sua presença online."
+      },
+      "instagram": {
+        "title": "GESTÃO DE INSTAGRAM",
+        "description": "Engaje e aumente seu público com estratégias personalizadas para Instagram."
+      },
+      "traffic": {
+        "title": "TRÁFEGO PAGO",
+        "description": "Campanhas pagas efetivas projetadas para maximizar seu ROI."
+      },
+      "design": {
+        "title": "DESIGN",
+        "description": "Soluções criativas de design que dão vida à visão da sua marca."
+      },
+      "ecommerce": {
+        "title": "E-COMMERCE",
+        "description": "Soluções robustas de e-commerce que impulsionam vendas online e engajamento do cliente."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Depoimentos",
+    "subtitle": "O que Estão Dizendo",
+    "description": "Veja o que nossos clientes estão dizendo:",
+    "testimonial": {
+      "text": "Trabalhar com a equipe da soltech foi uma experiência incrível. Desde o início, fiquei impressionado com a atenção aos detalhes e dedicação em transformar nossa visão em realidade. O website ficou impecável, não apenas em termos de design, mas também em funcionalidade e desempenho. A equipe foi extremamente profissional e atenciosa durante todo o processo, sempre pronta para ouvir nossas necessidades e oferecer soluções criativas. Recomendo fortemente a soltech para qualquer pessoa que busque excelência e inovação. Estamos muito satisfeitos com o resultado final!",
+      "author": "João Silva"
+    }
+  },
+  "footer": {
+    "links": {
+      "quality": "Qualidade",
+      "help": "Ajuda",
+      "share": "Compartilhar",
+      "careers": "Carreiras",
+      "testimonials": "Depoimentos",
+      "work": "Trabalhos"
+    },
+    "legal": {
+      "terms": "Termos e Condições",
+      "privacy": "Política de Privacidade"
+    }
+  },
+  "work": {
+    "title": "Nosso Trabalho",
+    "heading": "Como funciona?",
+    "description": "Preencha o formulário com suas informações e uma breve descrição do serviço desejado; ao clicar em \"Enviar\", você será automaticamente redirecionado para o WhatsApp com uma mensagem pré-formatada. A partir daí, nos comunicaremos diretamente com você para entender suas necessidades, enviar uma proposta personalizada e, após aprovação, iniciar o projeto. Durante todo o processo, mantemos você atualizado, entregamos os resultados conforme acordado e oferecemos suporte pós-entrega para garantir sua satisfação.",
+    "steps": {
+      "step1": {
+        "title": "Proposta e Planejamento",
+        "text": "Após compreender completamente suas necessidades, enviaremos uma proposta detalhada com valores, cronograma e escopo do serviço. Uma vez aprovado, começaremos a trabalhar em seu projeto."
+      },
+      "step2": {
+        "title": "Execução e Entrega",
+        "text": "Mantemos você atualizado durante todo o processo. Você terá a oportunidade de revisar e sugerir ajustes antes da entrega final. No caso de tráfego pago, relatórios regulares serão fornecidos para que você possa acompanhar os resultados."
+      },
+      "step3": {
+        "title": "Suporte Pós-Entrega",
+        "text": "Após a conclusão do projeto, permanecemos disponíveis para quaisquer dúvidas ou ajustes adicionais, garantindo sua completa satisfação."
+      }
+    }
+  }
+} 

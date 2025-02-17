@@ -2,9 +2,10 @@ import React, { useState, useRef } from "react";
 import BannerBackground from "../Assets/home-banner-background.png";
 import Navbar from "./Navbar";
 import { FiArrowRight } from "react-icons/fi";
+import { useTranslation } from 'react-i18next';
 
 // Custom Popup Modal Component
-const PopupModal = ({ onClose }) => {
+const PopupModal = ({ onClose, title, message, closeText }) => {
   return (
     <div
       className="popup-overlay"
@@ -33,9 +34,9 @@ const PopupModal = ({ onClose }) => {
           boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
         }}
       >
-        <h2 style={{ marginBottom: "10px", color: "#27ae60" }}>Congratulations!</h2>
+        <h2 style={{ marginBottom: "10px", color: "#27ae60" }}>{title}</h2>
         <p style={{ fontSize: "16px", lineHeight: "1.5", color: "#333" }}>
-          You are one step closer to having the perfect digital solution for your company! Our team of specialists is already preparing a personalized proposal just for you. We'll be in touch within 24 hours to elevate your digital presence to new heights.
+          {message}
         </p>
         <button
           onClick={onClose}
@@ -50,7 +51,7 @@ const PopupModal = ({ onClose }) => {
             fontSize: "16px",
           }}
         >
-          Close
+          {closeText}
         </button>
       </div>
     </div>
@@ -58,6 +59,7 @@ const PopupModal = ({ onClose }) => {
 };
 
 const Home = () => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -129,31 +131,25 @@ const Home = () => {
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
-            Turn your idea into an amazing digital solution. We can create everything you need.
+            {t('home.mainHeading')}
           </h1>
           <p className="primary-text">
-            We design and develop websites, systems, landing pages, institutional sites,
-            digital marketing strategies (including Instagram management and paid traffic),
-            and creative designs to elevate your brand. We provide customized digital services
-            to create modern, responsive, and conversion-driven online experiences. Whether it's
-            a website, system, landing page, or a comprehensive digital marketing strategy, we are
-            here to bring your vision to life.
+            {t('home.description')}
           </p>
           <button className="secondary-button" onClick={scrollToForm}>
-            Request a Quote
+            {t('home.requestQuote')}
             <FiArrowRight />
           </button>
         </div>
         <div className="home-image-section">
           <form className="contact-form" ref={formRef} onSubmit={sendContact}>
-            <p>Ready to Elevate Your Digital Presence?</p>
-            <h2>Get a Custom Landing Page in Just 5 Days!</h2>
+            <p>{t('home.form.title')}</p>
+            <h2>{t('home.form.subtitle')}</h2>
             <p>
-              Fill in the fields below and our specialists will prepare and send you a FREE
-              personalized digital services quote tailored to your needs.
+              {t('home.form.description')}
             </p>
             <div className="form-group">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">{t('home.form.name')}</label>
               <input
                 type="text"
                 id="name"
@@ -164,7 +160,7 @@ const Home = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">{t('home.form.email')}</label>
               <input
                 type="email"
                 id="email"
@@ -175,7 +171,7 @@ const Home = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="phone">Phone</label>
+              <label htmlFor="phone">{t('home.form.phone')}</label>
               <input
                 type="tel"
                 id="phone"
@@ -186,7 +182,7 @@ const Home = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">{t('home.form.message')}</label>
               <textarea
                 id="message"
                 name="message"
@@ -197,12 +193,19 @@ const Home = () => {
               ></textarea>
             </div>
             <div className="form-group-buttons">
-              <button type="submit">Send</button>
+              <button type="submit">{t('home.form.send')}</button>
             </div>
           </form>
         </div>
       </div>
-      {showPopup && <PopupModal onClose={() => setShowPopup(false)} />}
+      {showPopup && (
+        <PopupModal 
+          onClose={() => setShowPopup(false)} 
+          title={t('home.successPopup.title')}
+          message={t('home.successPopup.message')}
+          closeText={t('home.successPopup.close')}
+        />
+      )}
     </div>
   );
 };

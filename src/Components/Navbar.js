@@ -15,32 +15,35 @@ import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import MenuIcon from '@mui/icons-material/Menu';
 import './Navbar.css';
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
-      text: "Home",
+      text: t('navbar.home'),
       icon: <HomeIcon />,
       id: "home"
     },
     {
-      text: "About",
+      text: t('navbar.about'),
       icon: <InfoIcon />,
       id: "about"
     },
     {
-      text: "Work",
+      text: t('navbar.work'),
       icon: <CommentRoundedIcon />,
       id: "work"
     },
     {
-      text: "Testimonials",
+      text: t('navbar.testimonials'),
       icon: <CommentRoundedIcon />,
       id: "testimonial"
     },
     {
-      text: "Contact",
+      text: t('navbar.contact'),
       icon: <PhoneRoundedIcon />,
       id: "contact"
     }
@@ -65,8 +68,10 @@ const Navbar = () => {
             {item.text}
           </a>
         ))}
+        <LanguageSelector />
       </div>
       <div className="navbar-menu-container">
+        <LanguageSelector />
         <MenuIcon onClick={() => setOpenMenu(true)} />
       </div>
       <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
